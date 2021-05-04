@@ -43,7 +43,8 @@ def implement_lasso(acc_true, err_true):
         x = alpha_list,
         y = acc_list,
         error_y = dict(type='data', array=err_list),
-        mode='markers'
+        mode='markers',
+        showlegend=False
     ))
     fig_lasso.add_trace(go.Scatter(
         x = [1 / c_max],
